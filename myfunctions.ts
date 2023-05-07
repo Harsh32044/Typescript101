@@ -21,6 +21,10 @@ function consoleErr(errmsg: string) : void {
     console.log(errmsg)
 }
 
+function handleErr(errmsg: string): never {
+    throw new Error(errmsg)
+}
+
 /** : never -- never returns a value
  * never indicates that a function never executes normally, either throws an exception or 
  * sets up an infinite loop such that further execution of code won't happen
