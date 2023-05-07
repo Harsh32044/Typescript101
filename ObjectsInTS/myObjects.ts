@@ -19,8 +19,8 @@
    isActive: false,
    email: "ytfu@jyty.com"
  }
- createUser({name: "Harsh", isActive: false, email: "ytfu@jyty.com"}) // Giving error, can't pass more info than mentioned in function def
-
+ createUser({name: "Harsh", isActive: false}) // Giving error, can't pass more info than mentioned in function def
+ 
  createUser(newUser) // Not giving any error, able to pass a lot of info as optional data apart from mentioned in function def
 
  const createCourse = ():{name: string, price: number} => {
