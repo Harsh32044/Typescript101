@@ -11,4 +11,14 @@ const helloGreet = (s) => {
 };
 let heroes = ["Thor", "IronMan", "Captain America"];
 console.log(heroes.map((hero) => `hero is ${hero}`));
+function consoleErr(errmsg) {
+    console.log(errmsg);
+}
+function handleErr(errmsg) {
+    throw new Error(errmsg);
+}
+/** : never -- never returns a value
+ * never indicates that a function never executes normally, either throws an exception or
+ * sets up an infinite loop such that further execution of code won't happen
+*/
 console.log(signUpUser("harshSriv", "hsriv@gn.com", "&*^%%*$^&"));
