@@ -1,14 +1,15 @@
- type User = {
-   name: string,
-   email: string,
-   isActive: boolean
- }
+//  type User = {
+//    name: string,
+//    email: string,
+//    isActive: boolean
+//    creditCardDetails?: number //optional, ? symbol
+//  }
  
- const user: User = {
-    name: "Harsh",
-    email: "jgfjg@jgvh.com",
-    isActive: true
- }
+//  const user: User = {
+//     name: "Harsh",
+//     email: "jgfjg@jgvh.com",
+//     isActive: true
+//  }
 
  function createUser({name: string, isActive: boolean}) {
 

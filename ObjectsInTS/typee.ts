@@ -38,3 +38,22 @@ const myUser32 = createUser3("Harsh", 123234, "hrsf@ghgfh.cc", true)
 console.log(myUser32)
 
 
+//Combining Types
+
+type CardNum = {
+    cardnum: string
+}
+
+type CardDate = {
+    carddt: string
+}
+
+type CardDetails = CardNum & CardDate & {
+    cvv: number
+}
+
+const carddtls: CardDetails = {
+    cardnum: "4576754678568790",
+    carddt: "12/12/1212",
+    cvv: 234
+}
